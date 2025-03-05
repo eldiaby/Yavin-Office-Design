@@ -1,53 +1,66 @@
-Yavin - Office Furniture & Interior Design
+# Yavin - Office Furniture & Interior Design
 
-This is a personal website for Yavin, a company specializing in office furniture and interior design consultations. The website showcases the services and products Yavin offers, with a focus on providing high-quality office furniture and customized interior design solutions for businesses.
-Features
+This is a personal website for **Yavin**, a company specializing in **office furniture** and **interior design consultations**. The website showcases the services and products Yavin offers, with a focus on providing high-quality office furniture and customized interior design solutions for businesses.
 
-    Responsive Design: The website is fully responsive, optimized for desktops, tablets, and mobile devices.
-    E-commerce Store: Yavin's online store allows users to browse and purchase office furniture directly from the website.
-    Interior Design Consultations: Customers can request interior design consultations tailored to their office space needs.
-    SEO Optimized: The website follows SEO best practices for improved visibility on search engines.
-    Performance Optimized: The code is minified, and images are optimized to ensure faster loading times.
-    Modern Front-End Technologies: Built using HTML, CSS (Sass), JavaScript, and Bootstrap to demonstrate clean, modular front-end code.
+## Features
 
-Installation
+- **Responsive Design**: The website is fully responsive, optimized for desktops, tablets, and mobile devices.
+- **E-commerce Store**: Yavin's online store allows users to browse and purchase office furniture directly from the website.
+- **Interior Design Consultations**: Customers can request interior design consultations tailored to their office space needs.
+- **SEO Optimized**: The website follows SEO best practices for improved visibility on search engines.
+- **Performance Optimized**: The code is minified, and images are optimized to ensure faster loading times.
+- **Modern Front-End Technologies**: Built using **HTML**, **CSS (Sass)**, **JavaScript**, and **Bootstrap** to demonstrate clean, modular front-end code.
+
+## Installation
 
 Follow the steps below to get the project up and running locally.
-Prerequisites
+
+### Prerequisites
 
 Before running the project, ensure that you have the following installed:
 
-    Node.js
+- [Node.js](https://nodejs.org/en/)
 
-Getting Started
+### Getting Started
 
-    Clone the repository to your local machine:
+1.  Clone the repository to your local machine:
 
-git clone https://github.com/your-username/yavin.git
+    ```bash
+    git clone https://github.com/your-username/yavin.git
+    ```
 
-Navigate to the project directory:
+        Navigate to the project directory:
 
-cd ./yavin
+    ```bash
+    cd ./yavin
+    ```
 
 Install the required dependencies:
 
-    npm install
+```bash
+ npm install
+```
 
 Running the Application
 
 To start the application in development mode:
 
+```bash
 npm start
+```
 
 This will launch the front-end server and open the Yavin website in your browser.
 Build for Production
 
 To build the project for production (optimized for deployment), use the following command:
 
+```bash
 npm run build:project
+```
 
 This will minify the code and optimize the website for better performance.
-Technologies Used
+
+## Technologies Used
 
     Frontend:
         HTML5
@@ -56,7 +69,7 @@ Technologies Used
         Bootstrap 5 (for responsive design)
         Font Awesome (for icons)
         PostCSS (with Autoprefixer for cross-browser compatibility)
-        <!-- Lightbox (for image gallery functionality) -->
+
     Development Tools:
         npm (for package management)
         Live-server (for local development)
@@ -65,7 +78,7 @@ Technologies Used
         Rimraf (for cleaning up directories)
         npm-run-all (for running multiple scripts concurrently)
 
-Author
+## Author
 
 Eldiaby Hosny
 A full-stack web developer specializing in MEAN Stack (MongoDB, Express.js, Angular, Node.js).
@@ -74,3 +87,8 @@ LinkedIn Profile
 License
 
 This project is licensed under the ISC License - see the LICENSE file for details.
+Educational Project
+
+This project is part of a learning course, to demonstrate and practice concepts I have learned during the course.
+
+Thank you for visiting
