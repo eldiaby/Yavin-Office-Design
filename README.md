@@ -29,19 +29,19 @@ Before running the project, ensure that you have the following installed:
     git clone https://github.com/your-username/yavin.git
     ```
 
-        Navigate to the project directory:
+2.  Navigate to the project directory:
 
     ```bash
     cd ./yavin
     ```
 
-Install the required dependencies:
+3.  Install the required dependencies:
 
 ```bash
- npm install
+  npm install
 ```
 
-Running the Application
+## Running the Application
 
 To start the application in development mode:
 
@@ -91,4 +91,4 @@ Educational Project
 
 This project is part of a learning course, to demonstrate and practice concepts I have learned during the course.
 
-Thank you for visiting
+Thank you for visiting.
