@@ -1,0 +1,27 @@
+.navbar {
+  transition: all 0.5s ease-in-out;
+
+  // navbar animation class
+  &-sticky {
+    background-color: #fff;
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  &-logo {
+    width: 124px;
+  }
+
+  // Navbar toggler button
+  &__btn {
+    color: var(--bs-secondary);
+
+    @media only screen and (max-width: 992px) {
+      margin-top: 18px;
+    }
+    // transition: color 0.2s ease-in-out;
+    &:hover {
+      color: #fff;
+    }
+  }
+}

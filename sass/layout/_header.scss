@@ -1,0 +1,37 @@
+.header {
+  @media only screen and (max-width: 992px) {
+    margin-top: 0 !important;
+    text-align: center;
+  }
+
+  // Header decorations images
+  &__decoration-star {
+    top: 80px;
+    width: 500px;
+    opacity: 0.7;
+
+    @media only screen and (max-width: 992px) {
+      width: 250px;
+    }
+    &-1 {
+      // Left one
+      left: -200px;
+      @media only screen and (max-width: 992px) {
+        left: -100px;
+      }
+    }
+
+    &-2 {
+      // Right one
+      right: -200px;
+      @media only screen and (max-width: 992px) {
+        right: -100px;
+      }
+    }
+  }
+
+  // Header image
+  &__image-container {
+    margin-top: 32px;
+  }
+}
