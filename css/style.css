@@ -13035,6 +13035,74 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media only screen and (max-width: 992px) {
+  .header {
+    margin-top: 0 !important;
+    text-align: center;
+  }
+}
+.header__decoration-star {
+  top: 80px;
+  width: 500px;
+  opacity: 0.7;
+}
+@media only screen and (max-width: 992px) {
+  .header__decoration-star {
+    width: 250px;
+  }
+}
+.header__decoration-star-1 {
+  left: -200px;
+}
+@media only screen and (max-width: 992px) {
+  .header__decoration-star-1 {
+    left: -100px;
+  }
+}
+.header__decoration-star-2 {
+  right: -200px;
+}
+@media only screen and (max-width: 992px) {
+  .header__decoration-star-2 {
+    right: -100px;
+  }
+}
+.header__image-container {
+  margin-top: 32px;
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+.navbar-sticky {
+  background-color: #fff;
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.navbar-logo {
+  width: 124px;
+}
+.navbar__btn {
+  color: var(--bs-secondary);
+}
+@media only screen and (max-width: 992px) {
+  .navbar__btn {
+    margin-top: 18px;
+  }
+}
+.navbar__btn:hover {
+  color: #fff;
+}
+
+.xl-text {
+  font-size: 72px;
+}
+@media only screen and (max-width: 992px) {
+  .xl-text {
+    font-size: 48px;
+  }
+}
+
 /*!
  * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
