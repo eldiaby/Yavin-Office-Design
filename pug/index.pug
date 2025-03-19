@@ -1,0 +1,166 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Yavin || Office Furniture & Interior Design Consultations
+
+    // Meta Tags for SEO
+    meta(name="description" content="Yavin is your go-to company for office furniture and interior design consultations. Offering high-quality office furniture and expert guidance for creating the perfect workspace.")
+    meta(name="author" content="Yavin Team")
+    meta(name="keywords" content="office furniture, interior design, office space, furniture consultation, e-commerce, office setup")
+    meta(name="robots" content="index, follow")
+    meta(name="language" content="English")
+
+    // Open Graph Meta Tags for Social Sharing
+    meta(property="og:title" content="Yavin - Office Furniture & Interior Design")
+    meta(property="og:description" content="Yavin offers premium office furniture and expert interior design consultations to help you create the ideal workspace.")
+    meta(property="og:image" content="./images/favicon.png")
+    meta(property="og:url" content="https://yavin.com")
+    meta(property="og:type" content="website")
+    meta(property="og:site_name" content="Yavin")
+    meta(property="og:locale" content="en_US")
+    meta(property="og:updated_time" content="2025-03-05")
+
+    // Facebook Meta Tags
+    meta(property="fb:app_id" content="your-facebook-app-id")
+    meta(property="og:image" content="./images/favicon.png")
+
+    // Instagram Meta Tags
+    meta(property="og:image" content="./images/favicon.png")
+    meta(property="og:image:alt" content="Yavin Logo - Premium Office Furniture & Interior Design")
+
+    // Twitter Meta Tags for Sharing
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content="Yavin - Office Furniture & Interior Design")
+    meta(name="twitter:description" content="Explore premium office furniture and expert consultations at Yavin. Create your perfect workspace.")
+    meta(name="twitter:image" content="./images/favicon.png")
+    meta(name="twitter:site" content="@YavinOfficial")
+
+    // LinkedIn Meta Tags
+    meta(name="linkedin:card" content="summary_large_image")
+    meta(name="linkedin:title" content="Yavin - Office Furniture & Interior Design")
+    meta(name="linkedin:description" content="Create the ideal workspace with Yavin's office furniture and expert interior design consultations.")
+    meta(name="linkedin:image" content="./images/favicon.png")
+
+    // Link to External CSS and JS
+    link(rel="stylesheet" href="./css/style.css")
+    script(defer src="./js/script.min.js")
+
+    // Favicon Icons
+    link(rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png")
+    link(rel="manifest" href="./images/favicons/site.webmanifest")
+
+    // Google font: Open sans
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet")
+
+  body
+    // ================================================================
+    // End of the navigation
+    nav.navbar.navbar-expand-lg.sticky-top.navbar-light
+      .container
+        a.navbar-brand(href="#" title="Yavin")
+          img.navbar-logo(src="./images/logo.svg" alt="Yavin")
+        button.navbar-toggler(type="button" title="Nav-bar toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse(id="navbar-menu")
+          ul.navbar-nav.ms-auto
+            li.nav-item
+              a.nav-link(href="/#home" title="Home" aria-current="page") Home
+            li.nav-item
+              a.nav-link(href="#details" title="Details") Details
+            li.nav-item
+              a.nav-link(href="#services" title="Services") Services
+            li.nav-item
+              a.nav-link(href="#projects" title="Projects") Projects
+            li.nav-item
+              a.nav-link.btn.btn-outline-secondary.px-4.mx-4.navbar__btn(href="#contact" title="Contact Us") Contact Us
+
+    // ================================================================
+    // End of the header
+    header.header.position-relative.overflow-hidden.mt-6
+      img.header__decoration-star.header__decoration-star-1.position-absolute(src="./images/decoration-star.svg" alt="" title="")
+      img.header__decoration-star.header__decoration-star-2.position-absolute(src="./images/decoration-star.svg" alt="" title="")
+
+      .container.position-relative.z-3
+        .row
+          .col-lg-6
+            .mt-6
+              h1.xl-text.text-capitalize
+                | The 
+                span.text-primary perfect
+                |  office space
+              p.lead.mb-4
+                | We specialize in transforming office spaces into inspiring and functional environments. Let us bring your vision to life.
+              a.btn.btn-primary.btn-lg.m-2.text-capitalize(href="#introduction") More details
+              a.btn.btn-outline-secondary.btn-lg.m-2.text-capitalize(href="#content") Contact us
+          .col-lg-6
+            .header__image-container
+              img.img-fluid(src="./images/header.png" alt="Header image" title="Header image")
+
+    // ================================================================
+    // Start of the stats section
+    section.section-stats.container(id="section-stats")
+      .row.my-6
+        .col-md-3.col-sm-6.text-center
+          h2.xl-text.counter(data-counter-target="328") 328
+          p.text-capitalize Happy customer
+        .col-md-3.col-sm-6.text-center
+          h2.xl-text.counter(data-counter-target="285") 285
+          p.text-capitalize Issues solved
+        .col-md-3.col-sm-6.text-center
+          h2.xl-text.counter(data-counter-target="159") 159
+          p.text-capitalize Good reviews
+        .col-md-3.col-sm-6.text-center
+          h2.xl-text.counter(data-counter-target="128") 128
+          p.text-capitalize Case studies
+
+    // ================================================================
+    // Start of the introduction
+    section.section-introduction.py-6.bg-light(id="introduction")
+      .row
+        .col-lg-8.offset-lg-2.text-center
+          h2.text-capitalize
+            | Creating
+            span.text-secondary inspire
+            | office spaces
+          p.fs-5
+            | At our company, designing office spaces is our passion. We take pride in our completed projects that reflect our dedication and expertise in creating functional and aesthetically pleasing work environments.
+
+    // ================================================================
+    // Start of the details
+    section.section-details.position-relative.my-6.overflow-hidden(id="details")
+      img.position-absolute.decoration-star(src="./images/decoration-star.svg" alt="" title="")
+
+      .container.position-relative.z-3
+        .row
+          .col-lg-6
+            .image-container.d-flex.justify-content-center
+              img(src="./images/details-1.png" alt="" title="")
+          .col-lg-6
+            .mt-4
+              h2.text-capitalize.mb-4.text-center
+                | Create 
+                span.text-primary unique
+                | office spaces
+              ul.list-unstyled
+                li.d-flex.mb-3
+                  i.fas.fa-check.text-primary.fa-2x.mx-4
+                  p
+                    | Our approach ensures that every office space is tailored to the unique needs and preferences of our clients. No two spaces look the same.
+                li.d-flex.mb-3
+                  i.fas.fa-check.text-primary.fa-2x.mx-4
+                  p
+                    | We pay attention to every detail, ensuring that the design elements, furniture, and decor create a harmonious and inspiring atmosphere.
+                li.d-flex.mb-3
+                  i.fas.fa-check.text-primary.fa-2x.mx-4
+                  p
+                    | Our team of experts guarantees that your office space will be a reflection of your brand identity and company culture.
+                li.d-flex.mb-3
+                  i.fas.fa-check.text-primary.fa-2x.mx-4
+                  p
+                    | Existence as discourse is. Pleasure friendly at marriage blessing or should.
