@@ -183,3 +183,19 @@ html(lang="en")
             .row.mb-4 
               each service in services
                 +serviceTemplete(service)
+    // ================================================================
+    // Start of the details
+    section.section-details--2.position-relative.my-6.overflow-hidden
+      img.decoration-star.position-absolute(src="./images/decoration-star.svg" alt="" title="")
+      .container.position-relative.z-3 
+        .row 
+          .col-lg-6 
+            .text-container.text-center.text-lg-ster.mb-4
+              h2.text-capitalize Transform Your Workspace For Enhanced 
+                span.text-secondary productivity
+              p A thoughtfully designed and well-organized office space has aprofound impact on productivity and employee satisfaction. Itsets the stage for seamless collaboration, efficient workflows,and creative inspiration. At our company, we specialize increating tailored office environments that maximize productivityand elevate the overall work experience.
+              a.btn.btn-primary.text-capitalize(href="./article.html" title="Article page") Get started
+          .col-lg-6 
+            .image-container.d-flex.justify-content-center
+              img(src="./images/details-2.png", alt="Details-2 section main image" title="Details-2 section main image")
+
