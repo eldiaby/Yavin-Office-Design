@@ -1,5 +1,9 @@
-sass_setup.bat    :: SASS setup batch file 
+# sass_setup.bat    :: SASS setup batch file 
+
+*.html
 
 node_modules
 
 dist/
+
+css/
