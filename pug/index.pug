@@ -216,3 +216,15 @@ html(lang="en")
           each project in projects 
             +projectCard(project)
 
+    // ================================================================
+    // Start of the testimonials
+    section#testimonials.section-testimonials.bg-light.py-6 
+      #testimonialCarousel.carousel.slide
+        .carousel-inner
+          each testimonial, index in testimonials
+            +testimonialItem(testimonial, index == 0 ? true : false)
+
+        button.carousel-control-prev(type="button", data-bs-target="#testimonialCarousel", data-bs-slide="prev")
+          i.fas.fa-arrow-circle-left.fa-3x.text-secondary
+        button.carousel-control-next(type="button", data-bs-target="#testimonialCarousel", data-bs-slide="next")
+          i.fas.fa-arrow-circle-right.fa-3x.text-secondary

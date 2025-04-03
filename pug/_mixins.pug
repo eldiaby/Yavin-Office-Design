@@ -16,3 +16,14 @@ mixin projectCard(project)
         p.card-text
           | #{project.description}
           a(href=project.link) Read More 
+
+
+      //- Testimonials
+mixin testimonialItem(testimonial, isActive)
+  .carousel-item(class=isActive ? 'active' : '')
+    .d-flex.flex-column.justify-content-center.align-items-center.text-center
+      img(src=`./${testimonial.image}`, alt=testimonial.name, title=testimonial.name, class="rounded-circle testimonial-image")
+      p.w-50.my-4.fst-italic.fs-4.mb-4 #{testimonial.text}
+      .fw-bold.fs-5.mt-4= testimonial.name
+      div= testimonial.position
+
