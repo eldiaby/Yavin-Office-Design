@@ -63,7 +63,7 @@ html(lang="en")
 
   body
     // ================================================================
-    // End of the navigation
+    // Start of the navigation
     nav.navbar.navbar-expand-lg.sticky-top.navbar-light
       .container
         a.navbar-brand(href="#" title="Yavin")
@@ -84,7 +84,7 @@ html(lang="en")
               a.nav-link.btn.btn-outline-secondary.px-4.mx-4.navbar__btn(href="#contact" title="Contact Us") Contact Us
 
     // ================================================================
-    // End of the header
+    // Start of the header
     header.header.position-relative.overflow-hidden.mt-6
       img.header__decoration-star.header__decoration-star-1.position-absolute(src="./images/decoration-star.svg" alt="" title="")
       img.header__decoration-star.header__decoration-star-2.position-absolute(src="./images/decoration-star.svg" alt="" title="")
@@ -106,125 +106,196 @@ html(lang="en")
               img.img-fluid(src="./images/header.png" alt="Header image" title="Header image")
 
     // ================================================================
-    // Start of the stats section
-    section.section-stats.container(id="section-stats")
-      .row.my-6
-        .col-md-3.col-sm-6.text-center
-          h2.xl-text.counter(data-counter-target="328") 328
-          p.text-capitalize Happy customer
-        .col-md-3.col-sm-6.text-center
-          h2.xl-text.counter(data-counter-target="285") 285
-          p.text-capitalize Issues solved
-        .col-md-3.col-sm-6.text-center
-          h2.xl-text.counter(data-counter-target="159") 159
-          p.text-capitalize Good reviews
-        .col-md-3.col-sm-6.text-center
-          h2.xl-text.counter(data-counter-target="128") 128
-          p.text-capitalize Case studies
+    // Start of the main page contect
+    main 
+      // ================================================================
+      // Start of the stats section
+      section.section-stats.container(id="section-stats")
+        .row.my-6
+          .col-md-3.col-sm-6.text-center
+            h2.xl-text.counter(data-counter-target="328") 328
+            p.text-capitalize Happy customer
+          .col-md-3.col-sm-6.text-center
+            h2.xl-text.counter(data-counter-target="285") 285
+            p.text-capitalize Issues solved
+          .col-md-3.col-sm-6.text-center
+            h2.xl-text.counter(data-counter-target="159") 159
+            p.text-capitalize Good reviews
+          .col-md-3.col-sm-6.text-center
+            h2.xl-text.counter(data-counter-target="128") 128
+            p.text-capitalize Case studies
 
-    // ================================================================
-    // Start of the introduction
-    section.section-introduction.py-6.bg-light(id="introduction")
-      .row
-        .col-lg-8.offset-lg-2.text-center
-          h2.text-capitalize
-            | Creating
-            span.text-secondary inspire
-            | office spaces
-          p.fs-5
-            | At our company, designing office spaces is our passion. We take pride in our completed projects that reflect our dedication and expertise in creating functional and aesthetically pleasing work environments.
-
-    // ================================================================
-    // Start of the details
-    section.section-details.position-relative.my-6.overflow-hidden(id="details")
-      img.position-absolute.decoration-star(src="./images/decoration-star.svg" alt="" title="")
-
-      .container.position-relative.z-3
+      // ================================================================
+      // Start of the introduction
+      section.section-introduction.py-6.bg-light(id="introduction")
         .row
-          .col-lg-6
-            .image-container.d-flex.justify-content-center
-              img(src="./images/details-1.png" alt="" title="")
-          .col-lg-6
-            .mt-4
-              h2.text-capitalize.mb-4.text-center
-                | Create 
-                span.text-primary unique
-                | office spaces
-              ul.list-unstyled
-                li.d-flex.mb-3
-                  i.fas.fa-check.text-primary.fa-2x.mx-4
-                  p
-                    | Our approach ensures that every office space is tailored to the unique needs and preferences of our clients. No two spaces look the same.
-                li.d-flex.mb-3
-                  i.fas.fa-check.text-primary.fa-2x.mx-4
-                  p
-                    | We pay attention to every detail, ensuring that the design elements, furniture, and decor create a harmonious and inspiring atmosphere.
-                li.d-flex.mb-3
-                  i.fas.fa-check.text-primary.fa-2x.mx-4
-                  p
-                    | Our team of experts guarantees that your office space will be a reflection of your brand identity and company culture.
-                li.d-flex.mb-3
-                  i.fas.fa-check.text-primary.fa-2x.mx-4
-                  p
-                    | Existence as discourse is. Pleasure friendly at marriage blessing or should.
-    // ================================================================
-    // Start of the services
-    section#services.section-services.bg-light.py-6 
-      .container 
-        .row 
-          .col-lg-5 
-            .text-container.text-center.text-lg-start
-              h2
-                span.text-secondary Services 
-                | that we over
-              p At our company, we provide a wide range of services to meet all your office design needs. With our expertise and attention to detail, we ensure that every aspect of your office space is carefully considered and executed.
-          
-          .col-lg-7
-            .row.mb-4 
-              each service in services
-                +serviceTemplete(service)
-    // ================================================================
-    // Start of the details
-    section.section-details--2.position-relative.my-6.overflow-hidden
-      img.decoration-star.position-absolute(src="./images/decoration-star.svg" alt="" title="")
-      .container.position-relative.z-3 
-        .row 
-          .col-lg-6 
-            .text-container.text-center.text-lg-ster.mb-4
-              h2.text-capitalize Transform Your Workspace For Enhanced 
-                span.text-secondary productivity
-              p A thoughtfully designed and well-organized office space has aprofound impact on productivity and employee satisfaction. Itsets the stage for seamless collaboration, efficient workflows,and creative inspiration. At our company, we specialize increating tailored office environments that maximize productivityand elevate the overall work experience.
-              a.btn.btn-primary.text-capitalize(href="./article.html" title="Article page") Get started
-          .col-lg-6 
-            .image-container.d-flex.justify-content-center
-              img(src="./images/details-2.png", alt="Details-2 section main image" title="Details-2 section main image")
-    // ================================================================
-    // Start of the get quote
-    section.section-quote.bg-light.py-6.text-center
-      .container 
-        .row 
-          .col-lg-8.offset-lg-2 
-            h2.h4.lh-base Our team of highly skilled designers and interior construction workers can deliver above your level of expections
-            a.btn.btn-lg.btn-outline-primary.text-upparcase Get quote
-    // ================================================================
-    // Start of the projects section
-    section.section-projects.py-6#projects 
-      .container 
-        h2.text-center.pb-4.text-capitalize Some of our 
-          span.text-secondary projects
-        .row.mb-4
-          each project in projects 
-            +projectCard(project)
+          .col-lg-8.offset-lg-2.text-center
+            h2.text-capitalize
+              | Creating
+              span.text-secondary inspire
+              | office spaces
+            p.fs-5
+              | At our company, designing office spaces is our passion. We take pride in our completed projects that reflect our dedication and expertise in creating functional and aesthetically pleasing work environments.
 
-    // ================================================================
-    // Start of the testimonials
-    section#testimonials.section-testimonials.bg-light.py-6 
-      #testimonialCarousel.carousel.slide
-        .carousel-inner
-          each testimonial, index in testimonials
-            +testimonialItem(testimonial, index == 0 ? true : false)
+      // ================================================================
+      // Start of the details
+      section.section-details.position-relative.my-6.overflow-hidden(id="details")
+        img.position-absolute.decoration-star(src="./images/decoration-star.svg" alt="" title="")
 
-        button.carousel-control-prev(type="button", data-bs-target="#testimonialCarousel", data-bs-slide="prev")
-          i.fas.fa-arrow-circle-left.fa-3x.text-secondary
-        button.carousel-control-next(type="button", data-bs-target="#testimonialCarousel", data-bs-slide="next")
-          i.fas.fa-arrow-circle-right.fa-3x.text-secondary
+        .container.position-relative.z-3
+          .row
+            .col-lg-6
+              .image-container.d-flex.justify-content-center
+                img(src="./images/details-1.png" alt="" title="")
+            .col-lg-6
+              .mt-4
+                h2.text-capitalize.mb-4.text-center
+                  | Create 
+                  span.text-primary unique
+                  | office spaces
+                ul.list-unstyled
+                  li.d-flex.mb-3
+                    i.fas.fa-check.text-primary.fa-2x.mx-4
+                    p
+                      | Our approach ensures that every office space is tailored to the unique needs and preferences of our clients. No two spaces look the same.
+                  li.d-flex.mb-3
+                    i.fas.fa-check.text-primary.fa-2x.mx-4
+                    p
+                      | We pay attention to every detail, ensuring that the design elements, furniture, and decor create a harmonious and inspiring atmosphere.
+                  li.d-flex.mb-3
+                    i.fas.fa-check.text-primary.fa-2x.mx-4
+                    p
+                      | Our team of experts guarantees that your office space will be a reflection of your brand identity and company culture.
+                  li.d-flex.mb-3
+                    i.fas.fa-check.text-primary.fa-2x.mx-4
+                    p
+                      | Existence as discourse is. Pleasure friendly at marriage blessing or should.
+      // ================================================================
+      // Start of the services
+      section#services.section-services.bg-light.py-6 
+        .container 
+          .row 
+            .col-lg-5 
+              .text-container.text-center.text-lg-start
+                h2
+                  span.text-secondary Services 
+                  | that we over
+                p At our company, we provide a wide range of services to meet all your office design needs. With our expertise and attention to detail, we ensure that every aspect of your office space is carefully considered and executed.
+            
+            .col-lg-7
+              .row.mb-4 
+                each service in services
+                  +serviceTemplete(service)
+      // ================================================================
+      // Start of the details
+      section.section-details--2.position-relative.my-6.overflow-hidden
+        img.decoration-star.position-absolute(src="./images/decoration-star.svg" alt="" title="")
+        .container.position-relative.z-3 
+          .row 
+            .col-lg-6 
+              .text-container.text-center.text-lg-ster.mb-4
+                h2.text-capitalize Transform Your Workspace For Enhanced 
+                  span.text-secondary productivity
+                p A thoughtfully designed and well-organized office space has aprofound impact on productivity and employee satisfaction. Itsets the stage for seamless collaboration, efficient workflows,and creative inspiration. At our company, we specialize increating tailored office environments that maximize productivityand elevate the overall work experience.
+                a.btn.btn-primary.text-capitalize(href="./article.html" title="Article page") Get started
+            .col-lg-6 
+              .image-container.d-flex.justify-content-center
+                img(src="./images/details-2.png", alt="Details-2 section main image" title="Details-2 section main image")
+      // ================================================================
+      // Start of the get quote
+      section.section-quote.bg-light.py-6.text-center
+        .container 
+          .row 
+            .col-lg-8.offset-lg-2 
+              h2.h4.lh-base Our team of highly skilled designers and interior construction workers can deliver above your level of expections
+              a.btn.btn-lg.btn-outline-primary.text-upparcase Get quote
+      // ================================================================
+      // Start of the projects section
+      section.section-projects.py-6#projects 
+        .container 
+          h2.text-center.pb-4.text-capitalize Some of our 
+            span.text-secondary projects
+          .row.mb-4
+            each project in projects 
+              +projectCard(project)
+
+      // ================================================================
+      // Start of the testimonials
+      section#testimonials.section-testimonials.bg-light.py-6 
+        #testimonialCarousel.carousel.slide
+          .carousel-inner
+            each testimonial, index in testimonials
+              +testimonialItem(testimonial, index == 0 ? true : false)
+
+          button.carousel-control-prev(type="button", data-bs-target="#testimonialCarousel", data-bs-slide="prev" title="Preview")
+            i.fas.fa-arrow-circle-left.fa-3x.text-secondary
+          button.carousel-control-next(type="button", data-bs-target="#testimonialCarousel", data-bs-slide="next" title="Next")
+            i.fas.fa-arrow-circle-right.fa-3x.text-secondary
+
+      // ================================================================
+      // Start of the contact us section
+      section#contact.section-contact.my-6.position-relative.overflow-hidden
+        img.header__decoration-star.header__decoration-star-1.position-absolute(src="./images/decoration-star.svg" alt="" title="")
+        img.header__decoration-star.header__decoration-star-2.position-absolute(src="./images/decoration-star.svg" alt="" title="")
+        .container.position-relative.z-3 
+          .row 
+            .col-md-6.d-none.d-md-block 
+              .image-container 
+                img.img-fluid(src="./images/contact.png", alt="Our basic office", title="Our basic office")
+            .col-md-6 
+              .text-container.text-center 
+                h2.text-capitalize Contact us for a quote
+                form
+                  .mb-3 
+                    input(type="text", name="name" class="form-control", placeholder="Enter your name")
+                  .mb-3 
+                    input(type="email", name="email" class="form-control", placeholder="Enter your email")
+                  .mb-3 
+                    input(type="tel", name="phone" class="form-control", placeholder="Enter your phone number")
+                  .mb-3 
+                    textarea(name="message", class="form-control", placeholder="Enter your message" rows="8") 
+                  .d-grid.gap-2 
+                    button(type="submit").btn.btn-primary.btn-block Send
+    // ================================================================
+    // Start of the footer
+    footer.footer.bg-light.py-6
+      .container
+        .row
+          .col-md-4.my-3
+            h6 About Yavin
+            p
+              | Yavin is your go-to company for top-quality office furniture and interior design consultations. 
+              | We specialize in creating functional and aesthetically pleasing workspaces that reflect your brand’s identity.
+
+          .col-md-4.my-3
+            h6 Quick Links
+            ul.list-unstyled
+              li
+                | Important: 
+                a(href="#") Terms & Conditions,
+                a(href="#") Privacy Policy
+              li
+                | Resources: 
+                a(href="#") Blog,
+                a(href="#") Help Center
+              li
+                | Navigation: 
+                a(href="#home") Home,
+                a(href="#details") About Us,
+                a(href="#services") Services,
+                a(href="#contact") Contact
+
+          .col-md-4.my-3
+            .mb-4
+              a(href="#" class="text-decoration-none")
+                i.fab.fa-facebook.fa-3x.text-dark.mx-2
+              a(href="#" class="text-decoration-none")
+                i.fab.fa-twitter.fa-3x.text-dark.mx-2
+              a(href="#" class="text-decoration-none")
+                i.fab.fa-instagram.fa-3x.text-dark.mx-2
+              a(href="#" class="text-decoration-none")
+                i.fab.fa-pinterest.fa-3x.text-dark.mx-2
+            p
+              | We'd love to hear from you! Reach out to us at
+              a(href="mailto:contact@site.com")
+                strong contact@site.com
