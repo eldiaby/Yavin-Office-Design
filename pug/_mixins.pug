@@ -1,5 +1,18 @@
 
+//- Services section
 mixin serviceTemplete(servic)
   .servic.col-md-4.d-flex.flex-column.align-items-center.text-center
     i(class=servic.icon + ' fa-4x text-secondary mb-2')
     p.fs-5.fw-bold= servic.title
+
+
+    //- Projects section 
+mixin projectCard(project)
+  .col-md-4
+    .card.border-0
+      img(src=`./${project.image}`, alt=project.title title=project.title)
+      .card-body
+        h3.h5.card-title= project.title
+        p.card-text
+          | #{project.description}
+          a(href=project.link) Read More 
