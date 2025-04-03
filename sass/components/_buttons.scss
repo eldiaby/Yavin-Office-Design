@@ -1,0 +1,27 @@
+.to-top-btn {
+  background-color: #44434a;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0;
+  z-index: 1000;
+  border: 0;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+
+  &.show {
+    opacity: 1;
+  }
+
+  img {
+    margin-bottom: 0.25rem;
+    width: 18px;
+  }
+
+  &:hover {
+    background-color: #1d1d21;
+  }
+}

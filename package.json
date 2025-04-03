@@ -6,7 +6,7 @@
     "devserver": "live-server --browser=firefox",
     "sass:watch": "sass ./sass/style.scss ./css/style.css --no-source-map --watch",
     "watch:pug": "pug ./pug/contact.pug ./pug/index.pug --out ./ -w -P",
-    "start": "npm-run-all --parallel devserver sass:watch watch:pug",
+    "start": "npm-run-all --parallel devserver sass:watch watch:pug compress:js",
     "build:html": "npm-run-all build:pug create:dist minify:html",
     "build:pug": "pug ./pug/index.pug ./pug/contact.pug --out ./",
     "minify:html": "html-minifier-terser ./index.html  --output ./dist/index.html --collapse-whitespace --remove-comments --minify-js true --minify-css true && html-minifier-terser ./contact.html --output ./dist/contact.html --collapse-whitespace --remove-comments --minify-js true --minify-css true",
