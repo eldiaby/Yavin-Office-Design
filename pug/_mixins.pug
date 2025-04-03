@@ -27,3 +27,13 @@ mixin testimonialItem(testimonial, isActive)
       .fw-bold.fs-5.mt-4= testimonial.name
       div= testimonial.position
 
+
+mixin articleCard(card)
+  .col-md-6.col-lg-3
+    .card.my-2
+      .card-body
+        h5.card-title
+          i(class=`${card.icon} text-primary me-2`) 
+          | #{card.title}
+        p.card-text
+          | #{card.text}

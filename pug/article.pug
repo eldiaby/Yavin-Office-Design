@@ -1,0 +1,179 @@
+include _variables
+include _mixins
+//- 
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Article - Yavin || Office Furniture & Interior Design Consultations
+
+    // Meta Tags for SEO
+    meta(name="description" content="Explore our latest article about office design and furniture trends, featuring tips and insights to create the perfect workspace.")
+    meta(name="author" content="Yavin Team")
+    meta(name="keywords" content="office furniture, office design, workspace trends, furniture consultation, office setup, interior design articles")
+    meta(name="robots" content="index, follow")
+    meta(name="language" content="English")
+
+    // Open Graph Meta Tags for Social Sharing
+    meta(property="og:title" content="Yavin - Office Furniture & Interior Design")
+    meta(property="og:description" content="Read our latest article on office furniture and interior design trends, offering tips to enhance your workspace.")
+    meta(property="og:image" content="./images/article-image.jpg")
+    meta(property="og:url" content="https://yavin.com/article")
+    meta(property="og:type" content="article")
+    meta(property="og:site_name" content="Yavin")
+    meta(property="og:locale" content="en_US")
+    meta(property="og:updated_time" content="2025-03-05")
+
+    // Facebook Meta Tags
+    meta(property="fb:app_id" content="your-facebook-app-id")
+    meta(property="og:image" content="./images/article-image.jpg")
+
+    // Instagram Meta Tags
+    meta(property="og:image" content="./images/article-image.jpg")
+    meta(property="og:image:alt" content="Yavin Article - Office Furniture and Design Trends")
+
+    // Twitter Meta Tags for Sharing
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content="Yavin - Office Furniture & Interior Design")
+    meta(name="twitter:description" content="Explore our latest article on office furniture and design trends.")
+    meta(name="twitter:image" content="./images/article-image.jpg")
+    meta(name="twitter:site" content="@YavinOfficial")
+
+    // LinkedIn Meta Tags
+    meta(name="linkedin:card" content="summary_large_image")
+    meta(name="linkedin:title" content="Yavin - Office Furniture & Interior Design")
+    meta(name="linkedin:description" content="Discover tips for office design and furniture trends in our latest article.")
+    meta(name="linkedin:image" content="./images/article-image.jpg")
+
+    // Link to External CSS and JS
+    link(rel="stylesheet" href="./css/style.css")
+    script(defer src="./js/script.min.js")
+
+    // Favicon Icons
+    link(rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png")
+    link(rel="manifest" href="./images/favicons/site.webmanifest")
+
+    // Google font: Open sans
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet")
+
+  body
+    // ================================================================
+    // Start of the navigation
+    nav.navbar.navbar-expand-lg.sticky-top.navbar-light
+      .container
+        a.navbar-brand(href="./index.html" title="Yavin")
+          img.navbar-logo(src="./images/logo.svg" alt="Yavin")
+        button.navbar-toggler(type="button" title="Nav-bar toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse(id="navbar-menu")
+          ul.navbar-nav.ms-auto
+            li.nav-item
+              a.nav-link(href="./index.html" title="Home" aria-current="page") Home
+            li.nav-item
+              a.nav-link(href="#details" title="Details") Details
+            li.nav-item
+              a.nav-link(href="#services" title="Services") Services
+            li.nav-item
+              a.nav-link(href="#projects" title="Projects") Projects
+            li.nav-item
+              a.nav-link.btn.btn-outline-secondary.px-4.mx-4.navbar__btn(href="#contact" title="Contact Us") Contact Us
+
+    // ================================================================
+    // Start of the header
+    header.header
+      .container 
+        h1.text-capitalize Article details
+
+    // ================================================================
+    // Start of the main page content
+    main 
+      // Start of the image section
+      section.section-image 
+        .container 
+          img.w-100.my-6.rounded-2(src="./images/article-details-large.jpg", alt="Article main cover image ", title="Article main cover image ")
+    
+      // ================================================================
+      // Start of the basic text
+      section.section-basic-text 
+        .container 
+          .row 
+            .col-lg-10.offset-lg-1 
+              p At Yavin, we believe that creating the perfect office space goes beyond just choosing the right furniture. It's about designing an environment that fosters creativity, collaboration, and productivity. Our team of expert designers works closely with you to understand your needs and bring your vision to life, ensuring that every detail is tailored to your brand and company culture.
+
+              p.mb-4 Creating an inspiring office space is key to enhancing employee well-being and productivity. At Yavin, we specialize in transforming work environments that reflect your company's values and foster a positive atmosphere for growth and collaboration.
+
+              h2.mb-3 Advantages of working with this company
+              p With years of expertise in office design and furniture, we offer tailored solutions that meet your unique needs. Our team ensures that every detail, from furniture selection to layout, enhances both functionality and style.
+              p.mb-4   We prioritize customer satisfaction by providing personalized support and expert guidance throughout the entire design process. Our efficient approach guarantees timely delivery without compromising on quality.
+
+      // ================================================================
+      // Start of the cards section
+      section.section-cards
+        .container 
+          .row 
+            each cardData in articleCardsData
+              +articleCard(cardData)
+
+      // ================================================================
+      // Start of the gray box section
+      section.section-gray-box.my-5
+        .row 
+          .col-lg-8.offset-lg-2 
+            .card.bg-light.rounded-0.border-0.fs-6 
+              .card-body
+                h2.h3.text-capitalize We khow our customers want
+                p We know our customers want the best. That’s why we focus on delivering high-quality products and exceptional services. We constantly strive to meet their evolving needs and exceed expectations. By staying ahead of the latest trends and listening to customer feedback, we ensure that every experience is tailored to perfection. Your satisfaction is our priority, and we’re here to deliver innovative solutions that empower your business and enhance your life
+
+
+    // ================================================================
+    // Start of the footer
+    footer.footer.bg-light.py-6
+      .container
+        .row
+          .col-md-4.my-3
+            h6 About Yavin
+            p
+              | Yavin is your go-to company for top-quality office furniture and interior design consultations. 
+              | We specialize in creating functional and aesthetically pleasing workspaces that reflect your brand’s identity.
+
+          .col-md-4.my-3
+            h6 Quick Links
+            ul.list-unstyled
+              li
+                | Important: 
+                a(href="#") Terms & Conditions,
+                a(href="#") Privacy Policy
+              li
+                | Resources: 
+                a(href="#") Blog,
+                a(href="#") Help Center
+              li
+                | Navigation: 
+                a(href="#home") Home,
+                a(href="#details") About Us,
+                a(href="#services") Services,
+                a(href="#contact") Contact
+
+          .col-md-4.my-3
+            .mb-4
+              a(href="#" class="text-decoration-none")
+                i.fab.fa-facebook.fa-3x.text-dark.mx-2
+              a(href="#" class="text-decoration-none")
+                i.fab.fa-twitter.fa-3x.text-dark.mx-2
+              a(href="#" class="text-decoration-none")
+                i.fab.fa-instagram.fa-3x.text-dark.mx-2
+              a(href="#" class="text-decoration-none")
+                i.fab.fa-pinterest.fa-3x.text-dark.mx-2
+            p
+              | We'd love to hear from you! Reach out to us at
+              a(href="mailto:contact@site.com")
+                strong contact@site.com
+
+    // To top button
+    button.to-top-btn#to-top(type="button"): img(src="./images/up-arrow.png", alt="Go to the page top" title="Go to the page top")
