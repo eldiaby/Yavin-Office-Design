@@ -8,7 +8,7 @@
     "watch:pug": "pug ./pug/article.pug ./pug/index.pug --out ./ -w -P",
     "start": "npm-run-all --parallel devserver sass:watch watch:pug compress:js",
     "build:html": "npm-run-all build:pug create:dist minify:html",
-    "build:pug": "pug ./pug/index.pug ./pug/contact.pug --out ./",
+    "build:pug": "pug ./pug/index.pug ./pug/article.pug --out ./",
     "minify:html": "html-minifier-terser ./index.html  --output ./dist/index.html --collapse-whitespace --remove-comments --minify-js true --minify-css true && html-minifier-terser ./article.html --output ./dist/article.html --collapse-whitespace --remove-comments --minify-js true --minify-css true",
     "create:dist": "mkdirp ./dist ./dist/css ./dist/js ./dist/images ./dist/webfonts",
     "build:css": "npm-run-all sass:build prefix:css compress:sass",
